@@ -1,4 +1,5 @@
 import React from 'react';
+import './BlogCard.css';
 
 function BlogCard(props) {
   const { post } = props;
@@ -10,9 +11,9 @@ function BlogCard(props) {
       </div>
       <div className="blog-card-details">
         <h2>{post.title}</h2>
-        <p>{post.excerpt}</p>
+        <p>{post.content}</p>
         <div className="blog-card-tags">
-          {post.tags.map(tag => (
+          {post.tags && post.tags.map(tag => (
             <span key={tag}>{tag}</span>
           ))}
         </div>

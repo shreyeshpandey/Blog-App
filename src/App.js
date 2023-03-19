@@ -1,10 +1,11 @@
 import React from 'react';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import BlogCard from './components/BlogCard/BlogCard';
+import './App.css';
+
 
 function App() {
-  // Replace this with an array of blog post objects
   const blogPosts = [
     {
       id: 1,
@@ -34,18 +35,16 @@ function App() {
       category: "Health"
     }
   ];
-  
-  
 
   return (
     <div className="app">
-      {/* <Header /> */}
+      <Header />
       <div className="blog-cards-container">
-        {blogPosts.map(post => (
+        {blogPosts.length > 0 && blogPosts.map(post => (
           <BlogCard key={post.id} post={post} />
         ))}
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

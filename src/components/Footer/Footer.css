@@ -1,0 +1,28 @@
+.footer {
+    background-color: #8e7cc3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin-top: 2rem;
+  }
+  
+  .footer p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
